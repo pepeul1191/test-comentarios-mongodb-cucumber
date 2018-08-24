@@ -1,6 +1,13 @@
-## Test - Comentarios
+## Test Comentarios MongoDB Cucumber Ruby
 
 Instalación de dependencias:
+
+		$ gem install cucumber
+		$ bundler install
+
+Ejecutar pruebas:
+
+		$ cucumber
 
 ---
 
