@@ -17,7 +17,7 @@ Given("Crear POST data") do
 end
 
 When("Ejecutar petición HTTP") do
-  @response = HTTParty.get(
+  @response = HTTParty.post(
     @url,
     headers: @headers,
     body: 'data=' + @data.to_json,
@@ -25,5 +25,10 @@ When("Ejecutar petición HTTP") do
 end
 
 Then("Se debe obtener un status code success {int}") do |status_code|
+  #puts @response.body
   expect(@response.code).to be == status_code
+end
+
+Then("Se debe obtener el ObjectId generado que tiene una longitud de {int}") do |len|
+  expect(@response.body.length).to be == len
 end

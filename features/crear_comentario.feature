@@ -6,3 +6,4 @@ Feature: Crear Comentario
     Given Crear POST data
     When Ejecutar petición HTTP
     Then Se debe obtener un status code success 200
+    Then Se debe obtener el ObjectId generado que tiene una longitud de 24
