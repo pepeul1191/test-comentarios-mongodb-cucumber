@@ -13,6 +13,9 @@ end
 Given("Crear POST data") do
   @data = {
     :usuario_id => 23123,
+    :tipo => 'comentario', #respuesta
+    :estado => 'aprobado', #pendiente
+    :texto => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
   }
 end
 
